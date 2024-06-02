@@ -1,3 +1,44 @@
-<h1>Este es un sitio web con GitHub Pages</h1>
-<p>Fue creado con amor para el curso de Git y GitHub de Platzi</p>
-<p><img src="https://i.imgur.com/YgmMUzb.png" /></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="./images/layers.png" type="image/x-icon">
+    <title>Book Stacks</title>
+    
+</head>
+<body>
+    <div class="bookStack">
+        <div class="container">
+            <div class="form-container">
+                <img src="./images/layers.png" alt="logo" class="logo">
+                <h1 class="title">Book Stacks</h1>
+                <p class="subtitle">Add your favorite books</p>
+
+                <form class="form">
+                    <label for="nameBook" class="label">Book Name</label>
+                    <input type="nameBook" id="nameBook" placeholder="Enter the name book" class="input input-name">
+
+                    <button class="primary-button add-button" id="add">Add book</button>
+                    <button class="primary-button remove-button" id="remove">Remove book</button>
+
+                </form>
+
+            </div>
+            <div class="list-container">
+                <p class="listOfBooks">List of Books</p>
+                <ul id="listBook" class="books">
+
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
